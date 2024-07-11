@@ -1,0 +1,23 @@
+@use '../1-base/variables'
+
+.header
+  background-color: variables.$c12
+
+  color: variables.$white
+
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 16px
+    height: 80px
+
+    .menu
+      ul
+        display: flex
+        gap: 32px
+
+        a
+          font-weight: 600
+          font-family: variables.$poppins
+          font-size: 1.8rem

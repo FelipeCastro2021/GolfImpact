@@ -1,0 +1,65 @@
+@use './variables'
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Arial', sans-serif
+
+html
+  font-size: 62.5%
+
+body
+  min-height: 100vh
+
+body, input, textarea, button
+  font-size: 1.6rem
+  font-weight: 400
+
+ul
+  list-style: none
+
+a
+  text-decoration: none
+  color: inherit
+
+img
+  max-width: 100%
+  height: auto
+  display: block
+
+button
+  border: none
+  background: transparent
+
+.section
+  padding-block: 60px
+
+.btn
+  color: variables.$p5
+  background: variables.$linear
+
+  justify-self: start
+
+  height: 56px
+  padding-inline: 32px
+  border-radius: 5px
+
+  font-size: 1.8rem
+  line-height: 2.4
+  font-family: variables.$poppins
+  font-weight: 600
+
+  display: flex
+  align-items: center
+  justify-content: center
+
+  transition: filter .3s
+
+  &:hover
+    filter: brightness(120%)
+
+.container
+  max-width: 1120px
+  margin-inline: auto
+  padding-inline: 20px
